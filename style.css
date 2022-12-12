@@ -1,15 +1,48 @@
 header{
-    display: flex;
+background-color: yellow;
+height: 50px;
+}
+
+main{
+    width: 100%;
+    height: 600px;
+    background-image: url("./img/stadepsg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display:flex;
     justify-content: space-between;
-    background-color: #E83220;
+    align-items: center;
+}
+
+.main-banner{
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+
 }
 
 
 
 .profil{
-    width: 20%;
-    height: 20%;
+
+
+    width: 200px;
     border-radius: 50%;
+    border: 10px solid red
 }
-.infos{;
+.infos, .title{
+    color: white;
+}
+
+.infos{
+    text-align: center;
+    width:150px
+}
+
+.title{
+    width:30%
 }
