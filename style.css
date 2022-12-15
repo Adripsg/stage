@@ -4,12 +4,42 @@ body{
     margin-right: 50px;
 }
 
-h3{
-    font-size: 55px;
+a{
+    font-weight: normal;
+    color: blue;
+    cursor: pointer;
+    text-decoration: none;
 }
 
-p{
+a:hover{
+    color:green;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+
+
+h3{
+    padding-top: 150px;
+    font-size: 55px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+p,li,ul{
 font-size: 20px;
+font-family: 'Source Sans Pro', sans-serif;
+font-weight: 400;
+}
+
+.jour{
+    margin-bottom: 30px;
+
+    margin-top: 70px;
+}
+
+li{
+    list-style-type: none;
 }
 
 .container{
@@ -19,6 +49,7 @@ font-size: 20px;
     flex-direction: column;
     height: 100vh;
     width: 100vw;
+    font-family: 'Secular One', sans-serif;
 }
 
 .animation{
@@ -139,10 +170,10 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
     display:flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .main-banner{
@@ -152,6 +183,12 @@ main{
     flex-direction: column;
 
 
+}
+
+.main-sommaire{
+    background-color: #ECE1E1;
+    padding: 70px;
+    margin-bottom: 20px;
 }
 
 
@@ -164,7 +201,7 @@ left: 26px;
 bottom: 80px;
     width: 200px;
     border-radius: 50%;
-    border: 10px solid red
+    border: 10px solid rgb(204, 224, 16)
 }
 .infos, .title{
     color: white;
@@ -175,8 +212,13 @@ bottom: 80px;
     left: 26px;
     bottom: 80px;
     text-align: center;
-    width:150px;
-    font-size: 22px;
+    width:200px;
+
+}
+
+.infos p{
+font-size: 30px;
+margin: 0;
 }
 
 .title{
@@ -187,11 +229,52 @@ bottom: 80px;
 }
 
 .icone{
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
+    margin-right: 50px;
+}
+
+.flaticon{
+    width: 80px;
+    height: 80px;
+    position: relative;
+top: 52px;
+left: 20px;
 }
 
 footer{
     height: 140px;
-    
+    background-color: greenyellow;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.title-img{
+    display: flex;
+    padding-top: 150px;
+align-items: center;
+}
+
+.saturate{
+    filter: saturate(10) drop-shadow(8px 8px 10px gray);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.entrepriseimg{
+    width: 800px;
+    height: auto;
+    border-radius: 50px;
+}
+
+.entreprise{
+    display: flex;
+    justify-content: space-between;
 }
