@@ -12,6 +12,93 @@ p{
 font-size: 20px;
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.animation{
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1.5s forwards;
+    opacity: 0;
+    font-size: 50px;
+    color: white;
+    letter-spacing: 1px;
+    transition-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86) 
+}
+
+.first{
+    display: inline-block;
+    animation: firstspan 1.5 forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    z-index: 1;
+    position: relative;
+    right: 248px;
+    font-weight: 500;
+    font-size: 70px;
+}
+
+.slide{
+    position: relative;
+    left: 65px;
+    /* display: inline-flex; */
+    overflow: hidden;
+    /* text-align: center; */
+}
+
+
+.second{
+    z-index: -1;
+    display: inline-block;
+    animation: secondspan 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    font-weight: 100;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        transform: scale(1);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
+@keyframes firstspan{
+    0%{
+        transform: translateX(50%);
+    }
+    60%{
+        transform: translateX(50%);
+        }
+    100%{
+        transform: translateX(0%);
+        }
+}
+
+@keyframes secondspan{
+    0%{
+        transform: translateX(-150%);
+    }
+    60%{
+        transform: translateX(-150%);
+        }
+    100%{
+        transform: translateX(0%);
+        }
+}
+
 
 header{
     z-index: 1;
@@ -69,6 +156,8 @@ main{
 
 
 
+
+
 .profil{
 position: relative;
 left: 26px;
@@ -93,9 +182,8 @@ bottom: 80px;
 .title{
     font-size: 75px;
     position: relative;
-    right: 250px;
     bottom: 97px;
-    width:30%
+    width:63%
 }
 
 .icone{
